@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    background-color: #0c111b;  
+}
+
+body{
+    width: 100%;
+    background-color: #0c111b;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 0 4%;
+    background: #0c111b;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+}
+.brand-logo{
+    height: 35px;
+    width: 115px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: 26px;
+}
+.nav-links a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 2.9;
+}
+.right-container{
+    display: block;
+    padding-top: 18px;
+    margin-left: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    width: 250px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+.sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.login-link{
+    color:#fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.carousel-container{
+    position: relative;
+    height: 520px;
+    width: 100%;
+    padding: 20px 0;
+    overflow-x: hidden;    
+}
+
+
+.carousel-container-photo{
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+.photo-container{
+    height: 100%;
+    width: 100%; 
+    background:linear-gradient(180deg,#030b17 80%,#0c111b00);
+}
+.invisible{
+    visibility: hidden;
+}
+
+.carousel{
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 92%;
+    margin: auto;
+}
+.slider{
+    flex: 0 0 auto;
+    margin-right:30px ;
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+}
+.slider img{
+    width: 70%;
+    min-height: 100%;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+}
+.slider-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index:2;
+    color: #fff;
+    background: linear-gradient(to right,#030b17 80%,#0c111b00);
+}
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 80px;
+}
+.movie-des{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.video-card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.video-card a{
+    outline: 0;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/5-10px);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+}
+.video-card-image,
+.card-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: fill;
+    object-fit: cover;
+}
+.card-video{
+    position: relative;
+    
+}
+.video-card:hover .video-card-image{
+    display: none;
+}
+.title{
+    color: #fff;
+    opacity: 0.9;
+    padding-left:  4%;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 22px;
+}
+.movies-list{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    padding-left: 4%;
+    margin: 10px 0 10px;
+}
+.card-container{
+    position: absolute;
+    width: 92%;
+    padding-left: 1%;
+    height: 220px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+    
+}
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    scroll-behavior: smooth;
+    height: 200px;
+    border-radius: 8px;
+    overflow: visible;
+    margin-right: 10px;
+    transition: .5s;
+}
+.card_sports{
+    position: relative;
+    min-width: 230px;
+    width: 230px;
+    height: 140px;
+    border-radius: 8px;
+    
+    z-index: 1;
+    margin-right: 10px;
+    transition: .5s;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card_sports:hover{
+    transform: scale(1.06);
+    border-radius: 8px;
+}
+.card_sports:hover .card-body{
+    opacity: 1;
+    border-radius: 8px;
+}
+.card:hover{
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+.card:hover .card-body{
+    opacity: 1;
+    border-radius: 8px;
+}
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4,8,15,0),#192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+.name{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 50%;
+}
+.name-sports{
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 25%;
+}
+.des{
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 9px;
+}
+
+.watchlist-btn{
+    position: absolute;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 8px 5px;
+    bottom: 5px;
+    margin: 1px 0;
+    cursor: pointer;
+    font-size: 10px;
+    display: block;
+    border-radius: 5px;
+}
+.watchlist-btn::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    transform: scale(0.6);
+}
+.watchlist-btn:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+.pre-btn,
+.nxt-btn{
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pre-btn{
+    left: 0;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+.nxt-btn{
+    right: 0;
+    background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+.pre-btn img,
+.nxt-btn img{
+    width: 15px;
+    height: 20px;
+    opacity: 0;
+}
+.pre-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+}

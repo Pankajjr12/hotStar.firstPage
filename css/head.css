@@ -1,0 +1,133 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    background-color: #0c111b;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+header .logo{
+    position: relative;
+    font-size: 1.2em;
+    padding-top: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    
+}
+header .nav{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+header .nav li{
+    list-style: none;
+    margin: 0 15px;
+}
+header .nav li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+header .nav li a:hover{
+    color: #fff;
+    font-weight: 500;
+}
+header .right-container{
+    display: block;
+    margin-left: auto;
+}
+header .right-container .search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    width: 250px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+header .right-container .search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+header .right-container .sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+header .right-container .login-link{
+    color:#fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1043px)
+{
+    header
+    {    
+        padding: 7px 7px;
+        flex-direction: column;
+    }
+    header .right-container{
+        width: 100%;
+        padding: 10px 10px;
+        margin-left: 65%;
+    }
+
+    header .right-container .search-box:focus{
+        margin-right: auto;
+    } 
+    section{
+        padding: 100px 20px 50px;
+        flex-direction: column-reverse;
+    }
+    header .right-container .sub-btn{
+        display: none;
+    }
+    header .right-container .login-link{
+        right: 0%;
+        left: unset;
+    }
+    
+    section .carousel-container
+    {
+        width: 100%;
+        height: 220px;
+    }
+    
+    section .carousel-container .carousel .slider-content .movie-title{
+       padding-left: 10px;
+       margin-top: 20px;
+       font-size: 12px;
+    }
+    section .carousel-container .carousel .slider-content .movie-des{
+        font-size: 10px;
+        
+        padding-left: 10px;
+        line-height: 15px;
+     }
+
+}
