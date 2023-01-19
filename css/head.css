@@ -2,16 +2,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 70px;
+    padding: 25px 40px;
     width: 100%;
     height: 70px;
+    position: relative;
     min-height: 70px;
     background-color: #0c111b;
     color: rgba(255, 255, 255, 0.8);
     z-index: 10;
 }
+
 header .logo{
-    position: relative;
+ 
     font-size: 1.2em;
     padding-top: 18px;
     color: rgba(255, 255, 255, 0.8);
@@ -26,6 +28,7 @@ header .nav{
     flex-wrap: wrap;
     margin: 12px 0;
 }
+
 header .nav li{
     list-style: none;
     margin: 0 15px;
@@ -38,11 +41,14 @@ header .nav li a{
 }
 header .nav li a:hover{
     color: #fff;
-    font-weight: 500;
 }
+
 header .right-container{
-    display: block;
+    
+    padding-top: 18px;
     margin-left: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 header .right-container .search-box{
     border: none;
@@ -78,28 +84,61 @@ header .right-container .login-link{
     color:#fff;
     opacity: 0.9;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
 }
+.login-link1{
+    color:#fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: none;
+    font-weight: 700;
+    text-decoration: none;
+}
+.login-link1:hover{
+    color: #1f80e0;
+}
 
 
-@media (max-width: 1043px)
+@media (max-width: 991px)
 {
     header
     {    
-        padding: 7px 7px;
+        padding: 5px 5px;
+        height: auto;
         flex-direction: column;
     }
+    header .nav{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
     header .right-container{
         width: 100%;
+        text-align: center;
         padding: 10px 10px;
-        margin-left: 65%;
+    }
+    header .right-container .search-box{
+        width: 100px; 
+        text-align: center;
+    }
+    .log{
+        display: block;
     }
 
-    header .right-container .search-box:focus{
-        margin-right: auto;
+    header .right-container .search-box:focus{ 
+        width: 250px;
+        border-color: #1f80e0;
     } 
+    header .right-container .login-link{
+        display:none ;
+    }
+    .login-link1{
+        display:block ;
+    }
+
     section{
         padding: 100px 20px 50px;
         flex-direction: column-reverse;
@@ -111,23 +150,113 @@ header .right-container .login-link{
         right: 0%;
         left: unset;
     }
-    
-    section .carousel-container
+  
+    .sect .carousel-container
     {
         width: 100%;
-        height: 220px;
+        height: 260px;
     }
-    
-    section .carousel-container .carousel .slider-content .movie-title{
+    .sect .carousel-container .carousel .slider-content{
+        width: 40%;
+    }
+    .sect .carousel-container .carousel .slider-content .movie-title{
        padding-left: 10px;
        margin-top: 20px;
        font-size: 12px;
     }
-    section .carousel-container .carousel .slider-content .movie-des{
+    .sect .carousel-container .carousel .slider-content .movie-des{
         font-size: 10px;
-        
+        margin-top: 20px;
         padding-left: 10px;
         line-height: 15px;
      }
+     .sect .title{
+        font-size: 18px;
+     }
+     .sect .movies-list{
+        margin: 5px 0 5px;
+     }
+     
+    
+     .sect .movies-list .card-container .card .card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
 
+}
+@media (max-width:420px)
+{
+    .sect .carousel-container
+    {
+        width: 100%;
+        height: 200px;
+    }
+    .sect .carousel-container .carousel .slider .slider-content{
+        width: 30%;
+    }
+    .sect .carousel-container .carousel .slider{
+        background: rgba(0,0,0,0.5);
+    }
+    .sect .carousel-container .carousel .slider .slider-content .movie-title{
+        font-size: 10px;
+        padding-left: 7px;
+    }
+    .sect .carousel-container .carousel .slider .slider-content .movie-des{
+        font-size: 7px;
+        padding-left: 7px;
+        line-height: 8px;
+        margin-top: 10px;
+     }
+    .sect .title{
+        font-size: 12px;
+     }
+     .sect .movies-list{
+        margin: 2px 0 2px;
+        height: 180px;
+     }
+     .sect .movies-list2{
+        margin: 2px 0 2px;
+        height: 130px;
+     }
+     .sect .movies-list .card-container{
+        height: 180px;
+    } 
+    .sect .movies-list2 .card-container2{
+        height: 130px;
+    }
+    .sect .movies-list2 .card-container2 .card_sports{
+        height: 100px;
+        min-width: 150px;
+    }
+
+
+     .sect .movies-list .card-container .card{
+        min-width: 105px;
+        height: 160px;
+        margin-right: 6px;
+     }
+     .sect .movies-list .card-container .card .card-body .name{
+        font-size: 10px;
+        font-weight: 400;
+     }
+     .sect .movies-list2 .card-container2 .card_sports .card-body .name{
+        font-size: 10px;
+        font-weight: 400;
+     }
+     .sect .movies-list2 .card-container2 .card_sports .card-body .des{
+        font-size: 7px;
+        font-weight: 400;
+     }
+     .sect .movies-list .card-container .card .card-body .des{
+        font-size: 7px;
+        font-weight: 400;
+     }
+     .sect .movies-list .card-container .card .card-body .watchlist-btn{
+        padding: 4px 9px;
+        font-size: 8px;
+     }
+     .sect .movies-list2 .card-container2 .card_sports .card-body .watchlist-btn{
+        padding: 4px 4px;
+     }
 }

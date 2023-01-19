@@ -102,11 +102,10 @@ item.addEventListener('mouseout', function (e) {
 })
 
 let cardContainers = [...document.querySelectorAll('.card-container')];
-let pBtn = [...document.querySelectorAll('.pre-btn')];
-let nBtn = [...document.querySelectorAll('.nxt-btn')];
+let pBtn = [...document.querySelectorAll('.nxt-btn')];
+let nBtn = [...document.querySelectorAll('.pre-btn')];
 
-
-cardContainers.forEach((item,i)=>{
+ cardContainers.forEach((item,i)=>{
     let conDimension=item.getBoundingClientRect();
     let conWidth=conDimension.width;
 
@@ -117,6 +116,9 @@ cardContainers.forEach((item,i)=>{
         item.scrollLeft -= conWidth + 200;
     })
 })
+
+
+
 
 
 

@@ -1,0 +1,102 @@
+[{
+    "name":"The Lion King",
+    "imdb":6.8,
+    "date":"2019",
+    "fposter":"Images/post3.png",
+    "bposter":"Images/describe/img2.png",
+    "genre":"Adventure",
+    "type":"movie",
+    "movie_studio":"A Disney Movie",
+    "story":"After the devastating event of Infinity war the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
+    "url":"",
+    "trailer":""
+},
+{
+    "name":"The Jungle Book",
+    "imdb":7.4,
+    "date":"2016",
+    "fposter":"Images/post1.png",
+    "bposter":"Images/describe/img1.jpg",
+    "genre":"Adventure",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Cars 3",
+    "imdb":6.7,
+    "date":"2017",
+    "fposter":"Images/fcar.png",
+    "bposter":"Images/describe/bcars.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Pinnochio",
+    "imdb":7.5,
+    "date":"2022",
+    "fposter":"Images/fpinnichio.png",
+    "bposter":"Images/describe/bpin.jpg",
+    "genre":"Adventure",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Lightyear",
+    "imdb":6.0,
+    "date":"2022",
+    "fposter":"Images/flight.png",
+    "bposter":"Images/describe/blight.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Toy Story 3",
+    "imdb":8.3,
+    "date":"2010",
+    "fposter":"Images/ftoy.png",
+    "bposter":"Images/describe/btoy.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Brave",
+    "imdb":7.1,
+    "date":"2012",
+    "fposter":"Images/fbrave.png",
+    "bposter":"Images/describe/bbrave.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Brave",
+    "imdb":7.1,
+    "date":"2012",
+    "fposter":"Images/fbrave.png",
+    "bposter":"Images/describe/bbrave.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+},
+{
+    "name":"Brave",
+    "imdb":7.1,
+    "date":"2012",
+    "fposter":"Images/fbrave.png",
+    "bposter":"Images/describe/bbrave.jpg",
+    "genre":"Animation",
+    "type":"movie",
+    "url":"",
+    "trailer":"" 
+}
+]

@@ -1,94 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-#root{
-    background-color: #0c111b;  
+    scroll-behavior: smooth;
 }
 
 body{
     width: 100%;
     background-color: #0c111b;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
-    width: 100%;
-    height: 80px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    padding: 0 4%;
-    background: #0c111b;
-    display: flex;
-    align-items: center;
-    z-index: 9;
-}
-.brand-logo{
-    height: 35px;
-    width: 115px;
-}
-.nav-links{
-    display: flex;
-    list-style: none;
-    margin-top: 26px;
-}
-.nav-links a{
-    text-decoration: none;
-    margin-left: 20px;
-    text-transform: capitalize;
-    color: #fff;
-    opacity: 2.9;
-}
-.right-container{
-    display: block;
-    padding-top: 18px;
-    margin-left: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.search-box{
-    border: none;
-    border-bottom: 1px solid #aaa;
-    background: transparent;
-    outline: none;
-    height: 30px;
-    width: 250px;
-    text-transform: capitalize;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 0.5s;
-}
-.search-box:focus{
-    width: 400px;
-    border-color: #1f80e0;
-}
-.sub-btn{
-    background: #1f80e0;
-    height: 30px;
-    padding: 0 20px;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    margin: 0 10px;
-}
-.login-link{
-    color:#fff;
-    opacity: 0.9;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-}
+
+
+
+
+
 .carousel-container{
     position: relative;
     height: 520px;
@@ -135,7 +63,7 @@ body{
     background: rgba(0,0,0,0.5);
 }
 .slider img{
-    width: 70%;
+    width: 80%;
     min-height: 100%;
     border-radius: 8px;
     display: block;
@@ -209,12 +137,19 @@ body{
     opacity: 0.9;
     padding-left:  4%;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
 }
 .movies-list{
     width: 100%;
     height: 220px;
+    position: relative;
+    padding-left: 4%;
+    margin: 10px 0 10px;
+}
+.movies-list2{
+    width: 100%;
+    height: 170px;
     position: relative;
     padding-left: 4%;
     margin: 10px 0 10px;
@@ -231,10 +166,26 @@ body{
     overflow-y: visible;
     scroll-behavior: smooth;
 }
+.card-container2{
+    position: absolute;
+    width: 92%;
+    padding-left: 1%;
+    height: 170px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
 .card-container::-webkit-scrollbar{
     display: none;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;  
+}
+.card-container2::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;  
 }
 .card{
     position: relative;
@@ -251,10 +202,10 @@ body{
     position: relative;
     min-width: 230px;
     width: 230px;
-    height: 140px;
+    height: 150px;
     border-radius: 8px;
-    
-    z-index: 1;
+    overflow: visible;
+    scroll-behavior: smooth;
     margin-right: 10px;
     transition: .5s;
 }
@@ -316,17 +267,17 @@ body{
 
 .watchlist-btn{
     position: absolute;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
     text-transform: capitalize;
     background: none;
     border: none;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.5);
-    padding: 8px 5px;
     bottom: 5px;
-    margin: 1px 0;
+    left: 5px;
+    padding: 8px 15px;
+    right: 5px;
     cursor: pointer;
     font-size: 10px;
     display: block;
